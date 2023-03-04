@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
-import styles from "../css/Home.module.css"
+import Dropdown from "../Dropdown";
+import styles from "../../css/Home.module.css"
 
 const Home = () => {
   return (

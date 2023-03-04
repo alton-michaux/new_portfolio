@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "../css/Contact.module.css"
+import styles from "../../css/Contact.module.css"
 
 const Contact = () => {
 
