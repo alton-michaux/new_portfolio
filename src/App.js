@@ -17,6 +17,30 @@ function App() {
           }
         >
         </Route>
+        <Route
+          exact
+          path='/about'
+          element={
+            <About></About>
+          }
+        >
+        </Route>
+        <Route
+          exact
+          path='/contact'
+          element={
+            <Contact></Contact>
+          }
+        >
+        </Route>
+        <Route
+          exact
+          path='/experience'
+          element={
+            <Experience></Experience>
+          }
+        >
+        </Route>
       </Routes>
     </BrowserRouter>
   );
