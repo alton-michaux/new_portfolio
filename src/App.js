@@ -5,8 +5,6 @@ import About from "./routes/About"
 import Contact from "./routes/Contact"
 import Experience from "./routes/Experience"
 
-import './css/App.css';
-
 function App() {
   return (
     <BrowserRouter>
