@@ -1,4 +1,4 @@
-import styles from "../css/LanguageContainer.module.css"
+import styles from "../css/LanguageImageContainer.module.css"
 
 const LanguageContainer = () => {
   return (
