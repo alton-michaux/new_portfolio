@@ -1,5 +1,11 @@
 import styles from "../css/Home.module.css"
 
-export const Home = () => {
-
+const Home = () => {
+  return (
+    <div class={styles.homeDiv}>
+      Welcome!
+    </div>
+  )
 }
+
+export default Home

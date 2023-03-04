@@ -1,5 +1,7 @@
 import styles from "../css/About.module.css"
 
-export const About = () => {
+const About = () => {
 
 }
+
+export default About

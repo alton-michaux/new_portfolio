@@ -1,5 +1,7 @@
 import styles from "../css/Contact.module.css"
 
-export const Contact = () => {
+const Contact = () => {
 
 }
+
+export default Contact
