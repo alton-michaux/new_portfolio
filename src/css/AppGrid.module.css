@@ -1,0 +1,79 @@
+.canvasGrid {
+  position: relative;
+  width: 87vw;
+  height: 1vh;
+}
+
+.projectDisplay {
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  height: 100%;
+}
+
+.projectLink {
+  top: 3vh;
+  position: relative;
+  height: 29vh;
+}
+
+.projectBlocks {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 920px) {
+  .canvasDiv {
+    height: 0;
+  }
+
+  .canvasGrid {
+    position: relative;
+    margin: 0 auto;
+    bottom: 12%;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 16%;
+  }
+
+  .projectDisplay {
+    position: absolute;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    height: 6em;
+    width: 100%;
+  }
+
+  .projectLink {
+    position: relative;
+    height: inherit;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .projectBlockOne,
+  .projectBlocks {
+    position: absolute;
+    height: 6em;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    box-shadow: rgb(13, 48, 122) -1px 2px 13px;
+  }
+  
+  .projectBlocks:hover,
+  .projectBlockOne:hover {
+    transform: scale(1.03);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .canvasGrid {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    bottom: 20%;
+  }
+}

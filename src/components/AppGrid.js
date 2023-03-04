@@ -1,10 +1,12 @@
+import globalStyles from "../css/App.module.css"
+import navStyles from "../css/Nav.module.css"
 import styles from "../css/AppGrid.module.css"
 
 const AppGrid = () => {
   return (
     <div className={styles.canvasGrid}>
       <div className={styles.canvasDiv}>
-        <div className={styles.projectDisplay} id="app-div">
+        <div className={[styles.projectDisplay]} id="appDiv">
           <a
             className={styles.projectLink}
 
@@ -17,7 +19,7 @@ const AppGrid = () => {
                 alt="spotify playlist app"
                 className="thumbnail"
               />
-              <div className={styles.text}>Spotify Playlist App (JS)</div>
+              <div className={globalStyles.text}>Spotify Playlist App (JS)</div>
             </div></a
           >
           <a
@@ -31,7 +33,7 @@ const AppGrid = () => {
                 alt="Reddit clone"
                 className="thumbnail"
               />
-              <div className={styles.text}>Reddit Clone App (RoR)</div>
+              <div className={globalStyles.text}>Reddit Clone App (RoR)</div>
             </div></a
           >
           <a
@@ -44,15 +46,15 @@ const AppGrid = () => {
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDP7Dc75L_m9zazv1Kb4rskgQfP9FofKc3tg&usqp=CAU"
                 alt="chorbee web app"
-                className={styles.thumbnail}
+                className={globalStyles.thumbnail}
               />
-              <div className={[styles.text, styles.listItems]}>Chorebee Web App (RoR)</div>
+              <div className={[globalStyles.text, navStyles.listItems]}>Chorebee Web App (RoR)</div>
             </div></a
           >
         </div>
       </div>
       <div className={styles.canvasDiv}>
-        <div className={styles.projectDisplay} id="game-div">
+        <div className={styles.projectDisplay} id="gameDiv">
           <a
             className={styles.projectLink}
             href="https://alton-michaux.github.io/Breakout-game-/"
@@ -64,7 +66,7 @@ const AppGrid = () => {
                 alt="breakout game"
                 className="thumbnail mx-auto"
               />
-              <div className={[styles.text, styles.listItems]}>Breakout Game (JS)</div>
+              <div className={[globalStyles.text, navStyles.listItems]}>Breakout Game (JS)</div>
             </div></a
           >
         </div>

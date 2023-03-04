@@ -20,6 +20,39 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.greet {
+  text-justify: center;
+  top: 35%;
+  font-size: 1em;
+  margin: 5px;
+  color: white;
+} 
+
+.thumbnail {
+  background-color: transparent;
+  object-fit: contain;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+}
+
+.text {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.mobileHide {
+  display: none;
+}
+
+#appDiv,
+#gameDiv {
+  display: none;
+}
+
 @media screen and (min-width: 920px) {
   * {
     box-sizing: border-box;
@@ -30,7 +63,7 @@ body {
   option:first {
     color: grey;
   }
-  
+
   .parentDiv {
     display: block;
     position: relative;
@@ -40,5 +73,22 @@ body {
     background-color: #050525;
     background-blend-mode: screen;
     background-size: cover;
+  }
+
+  .greet {
+    position: relative;
+    margin: 15px;
+    text-align: center;
+    color: white;
+    top: 25%;
+    height: 6%;
+  }
+
+  .mobileHide {
+    display: block;
+  }
+
+  .desktopHide {
+    display: none;
   }
 }

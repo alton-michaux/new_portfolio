@@ -1,0 +1,15 @@
+.contactItems {
+  list-style-type: none;
+}
+
+.contactItems a {
+  text-decoration: none;
+  color: white;
+  line-height: 2em;
+}
+
+@media screen and (min-width: 920px) {
+  .contactItems a:hover {
+    color: magenta;
+  }
+}
