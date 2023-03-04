@@ -2,7 +2,7 @@ import styles from "../css/Footer.module.css"
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className={styles.footer}>
       <footer id="footer-text">&copy Alton Michaux 2022</footer>
     </div>
   )

@@ -6,11 +6,11 @@ import styles from "../css/Dropdown.module.css"
 const Dropdown = () => {
   return (
     <>
-      <div className="select-box pt-1 mx-auto">
-        <select className="project-pulldown text-center" id="projects">
-          <option value="" className="projects" disabled selected>Apps or Games?</option>
-          <option value="Apps" className="projects">Apps</option>
-          <option value="Games" className="projects">Games</option>
+      <div className={[styles.selectBox]}>
+        <select className={[styles.projectPulldown]} id="projects">
+          <option value="" className={styles.projects} disabled selected>Apps or Games?</option>
+          <option value="Apps" className={styles.projects}>Apps</option>
+          <option value="Games" className={styles.projects}>Games</option>
         </select>
       </div>
       <AppGrid></AppGrid>

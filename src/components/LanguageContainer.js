@@ -1,6 +1,8 @@
+import styles from "../css/LanguageContainer.module.css"
+
 const LanguageContainer = () => {
   return (
-    <div className="language-img-container mt-1 d-inline-flex">
+    <div className={styles.languageImageContainer}>
       <img
         src="https://www.iglobsyn.com/wp-content/uploads/2019/09/Ruby-on-rails-development.png"
         alt="ruby on rails"

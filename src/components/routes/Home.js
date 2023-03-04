@@ -9,11 +9,11 @@ const Home = () => {
   return (
     <div className={globalStyles.parentDiv}>
       <Nav></Nav>
-      <div className="main-page-greet-box container-fluid">
-        <div className="greet-wrapper text-center">
-          <h1 className="greet">Hey, I'm Alton and I Develop Web Apps.</h1>
-          <h2 className="greet mobile-hide">Let's Build Something.</h2>
-          <p className="greet desktop-hide">Feel free to browse my personal work below.</p>
+      <div className={[styles.mainPageGreetBox]}>
+        <div className={[styles.greetWrapper]}>
+          <h1 className={styles.greet}>Hey, I'm Alton and I Develop Web Apps.</h1>
+          <h2 className={[styles.greet, globalStyles.mobileHide]}>Let's Build Something.</h2>
+          <p className={[styles.greet, globalStyles.desktopHide]}>Feel free to browse my personal work below.</p>
         </div>
       </div>
       <Dropdown></Dropdown>
