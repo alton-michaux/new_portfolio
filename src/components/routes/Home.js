@@ -2,11 +2,12 @@ import PropTypes from "prop-types";
 import Dropdown from "../Dropdown";
 import Nav from "../Nav"
 import Footer from "../Footer";
+import globalStyles from "../../css/App.module.css"
 import styles from "../../css/Home.module.css"
 
 const Home = () => {
   return (
-    <>
+    <div className={globalStyles.parentDiv}>
       <Nav></Nav>
       <div className="main-page-greet-box container-fluid">
         <div className="greet-wrapper text-center">
@@ -17,7 +18,7 @@ const Home = () => {
       </div>
       <Dropdown></Dropdown>
       <Footer></Footer>
-    </>
+    </div>
   )
 }
 
