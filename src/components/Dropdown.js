@@ -1,5 +1,8 @@
+import PropTypes from "prop-types";
 import styles from "../css/Dropdown"
 
-export const Dropdown = () => {
+const Dropdown = () => {
 
 }
+
+export default Dropdown
