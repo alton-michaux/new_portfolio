@@ -21,7 +21,7 @@ const Nav = ({ page }) => {
         text: "Contact",
         key: 4
       }, {
-        href: "./Docs/Alton_Michaux_Resume.docx",
+        href: "../assets/Docs/Alton_Michaux_Resume.docx",
         text: "Resume",
         key: 5
       }
@@ -37,7 +37,9 @@ const Nav = ({ page }) => {
       <ul className={[styles.navList]}>
         {filteredItems.map((item) => {
           return (
-            <li key={item.key} className={styles.listItems}><a href={item.href}>{item.text}</a></li>
+            item.key === 5 ?
+              <li key={item.key} className={styles.listItems} download><a href={item.href} >{item.text}</a></li> :
+              <li key={item.key} className={styles.listItems}><a href={item.href} >{item.text}</a></li>
           )
         })}
       </ul>
