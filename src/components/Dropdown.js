@@ -9,7 +9,7 @@ const Dropdown = () => {
   const handleSelect = (selected) => {
     const dropdownValue = selected.target.value
 
-    if (dropdownValue === "Apps") {
+    if (dropdownValue === "JavaScript") {
       appRef.current.style.display = "grid";
       appRef.current.style.padding = "20px";
       gameRef.current.style.display = "none";
@@ -23,9 +23,9 @@ const Dropdown = () => {
     <>
       <div className={[styles.selectBox]}>
         <select className={[styles.projectPulldown]} id="projects" onChange={selected => handleSelect(selected)}>
-          <option value="" className={styles.projects} disabled defaultValue>Apps or Games?</option>
-          <option value="Apps" className={styles.projects}>Apps</option>
-          <option value="Games" className={styles.projects}>Games</option>
+          <option value="" className={styles.projects} disabled defaultValue>JavaScript or Ruby?</option>
+          <option value="JavaScript" className={styles.projects}>JavaScript</option>
+          <option value="Ruby" className={styles.projects}>Ruby</option>
         </select>
       </div>
       <AppGrid

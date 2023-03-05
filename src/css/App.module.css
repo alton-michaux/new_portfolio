@@ -58,8 +58,8 @@ body {
   display: none;
 }
 
-#appDiv,
-#gameDiv {
+#jsDiv,
+#rubyDiv {
   display: none;
 }
 
