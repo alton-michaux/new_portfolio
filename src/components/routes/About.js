@@ -21,11 +21,16 @@ const About = ({ page, setPage }) => {
             As a self-motivated individual who is always looking to learn new skills and improve my current ones, it gives me a sense of pride to be able to provide efficient business solutions to my clients/employers.
           </p>
         </div>
-        {/* <LanguageContainer></LanguageContainer> */}
+        <LanguageContainer></LanguageContainer>
       </div>
       <Footer></Footer>
     </div>
   )
+}
+
+About.prototype = {
+  page: PropTypes.string.isRequired,
+  setPage: PropTypes.func.isRequired
 }
 
 export default About

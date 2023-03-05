@@ -1,6 +1,5 @@
 import React from "react";
 import AppGrid from "./AppGrid.js"
-import PropTypes from "prop-types";
 import styles from "../css/Dropdown.module.css"
 
 const Dropdown = () => {

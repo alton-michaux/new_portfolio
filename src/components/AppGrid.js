@@ -26,7 +26,7 @@ const AppGrid = () => {
       }
     ]
 
-    const gameListItems =
+  const gameListItems =
     [
       {
         href: "https://alton-michaux.github.io/Breakout-game-/",
