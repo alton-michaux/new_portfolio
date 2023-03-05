@@ -9,16 +9,20 @@
 }
 
 .navList {
+  display: flex;
+  flex-direction: row;
   position: relative;
   text-decoration: none;
   list-style: none;
   width: 100%;
   align-content: space-between;
+  justify-content: space-between;
 }
 
 .listItems {
   font-size: 1em;
   overflow: hidden;
+  margin-top: 2.5%;
 }
   
 .listItems > a {

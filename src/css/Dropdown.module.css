@@ -1,16 +1,20 @@
 .selectBox {
   display: flex;
   position: sticky;
-  height: 75%;
+  height: 20%;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .projectPulldown {
   position: absolute;
-  top: 0; bottom: 0; left: auto; right: auto;
+  top: 10%; bottom: 0; left: auto; right: auto;
   font-size: 1em;
   opacity: 80%;
   background-color: #31313f;
   color: white;
+  height: 25%;
+  padding: 15%;
 }
 
 .projectPulldown > option {
@@ -18,11 +22,10 @@
 }
 
 @media screen and (min-width: 920px) {
-
   .selectBox {
     position: relative;
     display: flex;
-    margin-top: 15em;
+    margin-top: 20em;
     width: 100%;
     height: 20%;
     justify-content: center;
