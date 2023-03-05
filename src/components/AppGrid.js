@@ -60,7 +60,7 @@ const AppGrid = () => {
             href="https://alton-michaux.github.io/Breakout-game-/"
             target="blank"
           >
-            <div className={styles.gameBlock} id="games">
+            <div className={[styles.gameBlock, styles.appBlock].join(' ')} id="games">
               <img
                 src="https://image.api.playstation.com/vulcan/ap/rnd/202009/1415/6nNsvW4EX4wGbcIItg0paDEV.jpg?w=1024"
                 alt="breakout game"
