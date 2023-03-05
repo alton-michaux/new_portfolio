@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+option:first {
+  color: grey;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.parentDiv {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/Images/alton-members-only.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #050525;
+  background-blend-mode: screen;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+
+.greet {
+  text-justify: center;
+  top: 35%;
+  font-size: 1em;
+  margin: 5px;
+  color: white;
+} 
+
+.thumbnail {
+  background-color: transparent;
+  object-fit: contain;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+}
+
+.text {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.mobileHide {
+  display: none;
+}
+
+#appDiv,
+#gameDiv {
+  display: none;
+}
+
+@media screen and (min-width: 920px) {
+  .parentDiv {
+    display: block;
+    position: relative;
+    background-image: url("../assets/Images/devices.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #050525;
+    background-blend-mode: screen;
+    background-size: cover;
+  }
+
+  .mainPageGreetBox {
+    position: absolute;
+    top: 0px; right: 0px; left: 0px; bottom: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .greet {
+    position: relative;
+    margin: 15px;
+    text-align: center;
+    color: white;
+    top: 25%;
+    height: 6%;
+  }
+
+  .mobileHide {
+    display: block;
+  }
+
+  .desktopHide {
+    display: none;
+  }
+}

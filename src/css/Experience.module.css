@@ -1,0 +1,12 @@
+@media screen and (min-width: 920px) {
+  .taskList {
+    list-style: none;
+  }
+
+  .taskItem {
+    margin: 0 auto;
+    padding: 10px;
+    font-size: .95em;
+    color: grey;
+  }
+}

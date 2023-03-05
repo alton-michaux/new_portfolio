@@ -1,0 +1,31 @@
+.greetWrapper {
+  position: sticky;
+  top: 35%;
+}
+
+.greet {
+  text-justify: center;
+  top: 35%;
+  font-size: 1em;
+  margin: 5px;
+  color: white;
+}
+
+@media screen and (min-width: 920px) {
+  .mainPageGreetBox {
+    position: absolute;
+    top: 0px; right: 0px; left: 0px; bottom: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .greet {
+    position: relative;
+    margin: 15px;
+    text-align: center;
+    color: white;
+    top: 25%;
+    height: 6%;
+  }
+}

@@ -1,0 +1,56 @@
+.navBar {
+  z-index: 1;
+  top: 0;
+  min-width: 100vw;
+  position: fixed;
+  height: 60px;
+  background-color: rgb(13, 48, 122);
+  box-shadow: rgb(39, 54, 87) -1px 2px 13px;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.listItems {
+  font-size: 1em;
+  overflow: hidden;
+  margin-top: 2.5%;
+}
+  
+.listItems > a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 920px) {
+  .navBar {
+    position: sticky;
+    z-index: 1000;
+    width: 800px;
+    height: 50px;
+  }
+
+  .navList {
+    display: flex;
+    list-style: none;
+  }
+
+  .listItems {
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.25em;
+  }
+  
+  .listItems:hover,
+  .project-pulldown {
+    cursor: pointer;
+  }
+}
