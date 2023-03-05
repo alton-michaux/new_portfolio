@@ -1,16 +1,52 @@
-import styles from "../css/Nav.module.css"
+import PropTypes from "prop-types";
+import styles from "../css/Nav.module.css";
 
-const Nav = () => {
+const Nav = ({ page }) => {
+  const listItems =
+    [
+      {
+        href: "/",
+        text: "Home",
+        key: 1
+      }, {
+        href: "/experience",
+        text: "Experience",
+        key: 2
+      }, {
+        href: "/about",
+        text: "About",
+        key: 3
+      }, {
+        href: "/contact",
+        text: "Contact",
+        key: 4
+      }, {
+        href: "./Docs/Alton_Michaux_Resume.docx",
+        text: "Resume",
+        key: 5
+      }
+    ]
+
+  const filteredItems = listItems.filter((item) => {
+    return (
+      item.text !== page
+    )
+  })
   return (
     <div className={[styles.navBar]}>
       <ul className={[styles.navList]}>
-        <li className={[styles.listItems]}><a href="/experience">Experience</a></li>
-        <li className={[styles.listItems]}><a href="/about">About</a></li>
-        <li className={[styles.listItems]}><a href="/contact">Contact</a></li>
-        <li className={[styles.listItems]}><a href="./Docs/Alton_Michaux_Resume.docx" download>Resume</a></li>
+        {filteredItems.map((item) => {
+          return (
+            <li key={item.key} className={styles.listItems}><a href={item.href}>{item.text}</a></li>
+          )
+        })}
       </ul>
     </div>
   )
+}
+
+Nav.propTypes = {
+  page: PropTypes.string.isRequired
 }
 
 export default Nav

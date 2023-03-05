@@ -58,9 +58,11 @@
   }
 
   .projectPulldown {
+    z-index: 1001;
     position: absolute;
     top: 0;
     width: 40%;
     font-size: 1em;
+    min-height: inherit;
   }
 }

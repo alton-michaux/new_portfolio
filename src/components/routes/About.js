@@ -6,10 +6,13 @@ import globalStyles from "../../css/App.module.css"
 import styles from "../../css/About.module.css"
 import LanguageContainer from "../LanguageContainer";
 
-const About = () => {
+const About = ({ page, setPage }) => {
+  setPage("About")
   return (
     <div className={globalStyles.parentDiv}>
-      <Nav></Nav>
+      <Nav
+        page={page}
+      ></Nav>
       <div className={styles.aboutMeGreetBox}>
         <div className={styles.aboutMeTextBox}>
           <p className={globalStyles.greet}>As a back end developer, I'm knowledgable in Object Oriented Programing: specifically Ruby on Rails techonologies.

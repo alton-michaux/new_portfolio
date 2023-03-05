@@ -8,7 +8,7 @@ const Dropdown = () => {
     <>
       <div className={[styles.selectBox]}>
         <select className={[styles.projectPulldown]} id="projects">
-          <option value="" className={styles.projects} disabled selected>Apps or Games?</option>
+          <option value="" className={styles.projects} disabled defaultValue>Apps or Games?</option>
           <option value="Apps" className={styles.projects}>Apps</option>
           <option value="Games" className={styles.projects}>Games</option>
         </select>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/routes/Home"
 import About from "./components/routes/About"
@@ -7,6 +7,11 @@ import Experience from "./components/routes/Experience"
 import styles from "./css/App.module.css"
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('')
+
+  const handlePage = (string) => {
+    setCurrentPage(string)
+  }
   return (
     <BrowserRouter>
       <Routes>
@@ -14,7 +19,10 @@ function App() {
           exact
           path='/'
           element={
-            <Home></Home>
+            <Home
+              page={currentPage}
+              setPage={handlePage}
+            ></Home>
           }
         >
         </Route>
@@ -22,7 +30,10 @@ function App() {
           exact
           path='/about'
           element={
-            <About></About>
+            <About
+              page={currentPage}
+              setPage={handlePage}
+            ></About>
           }
         >
         </Route>
@@ -30,7 +41,10 @@ function App() {
           exact
           path='/contact'
           element={
-            <Contact></Contact>
+            <Contact
+              page={currentPage}
+              setPage={handlePage}
+            ></Contact>
           }
         >
         </Route>
@@ -38,7 +52,10 @@ function App() {
           exact
           path='/experience'
           element={
-            <Experience></Experience>
+            <Experience
+              page={currentPage}
+              setPage={handlePage}
+            ></Experience>
           }
         >
         </Route>
