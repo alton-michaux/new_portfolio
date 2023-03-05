@@ -52,8 +52,8 @@ const AppGrid = ({gameRef, appRef}) => {
               >
                 <div className={styles.appBlock} id="apps">
                   <img
-                    src={item.src}
-                    alt={item.alt}
+                    src={item.imgSrc}
+                    alt={item.imgAlt}
                     className={globalStyles.thumbnail}
                   />
                   <div className={item.key === 3 ? [globalStyles.text, navStyles.listItems].join(' ') : globalStyles.text}>{item.text}</div>
@@ -74,8 +74,8 @@ const AppGrid = ({gameRef, appRef}) => {
               >
                 <div className={[styles.gameBlock, styles.appBlock].join(' ')} id="games">
                   <img
-                    src={item.src}
-                    alt={item.alt}
+                    src={item.imgSrc}
+                    alt={item.imgAlt}
                     className={globalStyles.thumbnail}
                   />
                   <div className={[globalStyles.text, navStyles.listItems].join(' ')}>{item.text}</div>
