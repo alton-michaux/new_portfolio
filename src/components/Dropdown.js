@@ -17,16 +17,16 @@ const Dropdown = () => {
   const handleSelect = (selected) => {
     const dropdownValue = selected.target.value
 
-    if (dropdownValue == "Apps") {
-      resetDivs(dropdownValue);
+    if (dropdownValue === "Apps") {
+      // resetDivs(dropdownValue);
       appRef.current.style.display = "grid";
       appRef.current.style.padding = "20px";
-      appRef.current.style.display = "none";
+      gameRef.current.style.display = "none";
     } else {
-      resetDivs(dropdownValue);
+      // resetDivs(dropdownValue);
       gameRef.current.style.display = "grid";
       gameRef.current.style.padding = "20px";
-      gameRef.current.style.display = "none";
+      appRef.current.style.display = "none";
     }
   }
   return (

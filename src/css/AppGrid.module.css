@@ -5,9 +5,9 @@
 }
 
 .projectDisplay {
+  display: none;
   grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
   height: 100%;
-  /* display: none; */
 }
 
 .projectLink {
