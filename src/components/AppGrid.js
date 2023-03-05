@@ -20,7 +20,7 @@ const AppGrid = ({gameRef, appRef}) => {
         key: 2
       }, {
         href: "https://altons-todo-list.netlify.app/",
-        imgSrc: "https://drive.google.com/file/d/1kJHcXPocoOdFEqqjAeO2pRgYnTQfOTPW/view?usp=share_link",
+        imgSrc: "https://www.cornerstone.edu/wp-content/uploads/2021/12/1470-WEB-productivity.jpeg",
         imgAlt: "Todo list",
         text: "Todo List",
         key: 3
