@@ -1,8 +1,9 @@
 import globalStyles from "../css/App.module.css"
 import navStyles from "../css/Nav.module.css"
 import styles from "../css/AppGrid.module.css"
+import PropTypes from "prop-types"
 
-const AppGrid = () => {
+const AppGrid = ({gameRef, appRef}) => {
   const appListItems =
     [
       {
@@ -36,10 +37,11 @@ const AppGrid = () => {
         key: 1
       }
     ]
+
   return (
     <div className={styles.canvasGrid}>
       <div className={styles.canvasDiv}>
-        <div className={[styles.projectDisplay]} id="appDiv">
+        <div className={[styles.projectDisplay]} id="appDiv" ref={appRef}>
           {appListItems.map((item) => {
             return (
               <a
@@ -62,7 +64,7 @@ const AppGrid = () => {
         </div>
       </div>
       <div className={styles.canvasDiv}>
-        <div className={styles.projectDisplay} id="gameDiv">
+        <div className={styles.projectDisplay} id="gameDiv" ref={gameRef}>
           {gameListItems.map((item) => {
             return (
               <a
@@ -85,6 +87,11 @@ const AppGrid = () => {
       </div>
     </div>
   )
+}
+
+AppGrid.propTypes = {
+  appRef: PropTypes.object.isRequired,
+  gameRef: PropTypes.object.isRequired
 }
 
 export default AppGrid
