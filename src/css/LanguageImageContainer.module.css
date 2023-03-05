@@ -1,6 +1,9 @@
 .languageImgContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
   bottom: 0;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 20%;
@@ -8,11 +11,8 @@
 
 @media screen and (min-width: 920px) {
   .languageImgContainer {
-    position: absolute;
-    bottom: 30%; left: 0; right: 0;
-    display: grid;
-    height: 20%;
-    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    margin-top: 30%;
+    flex-direction: row;
   }
 }
 

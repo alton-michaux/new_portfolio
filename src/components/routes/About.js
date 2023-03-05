@@ -6,10 +6,13 @@ import globalStyles from "../../css/App.module.css"
 import styles from "../../css/About.module.css"
 import LanguageContainer from "../LanguageContainer";
 
-const About = () => {
+const About = ({ page, setPage }) => {
+  setPage("About")
   return (
     <div className={globalStyles.parentDiv}>
-      <Nav></Nav>
+      <Nav
+        page={page}
+      ></Nav>
       <div className={styles.aboutMeGreetBox}>
         <div className={styles.aboutMeTextBox}>
           <p className={globalStyles.greet}>As a back end developer, I'm knowledgable in Object Oriented Programing: specifically Ruby on Rails techonologies.
@@ -18,11 +21,16 @@ const About = () => {
             As a self-motivated individual who is always looking to learn new skills and improve my current ones, it gives me a sense of pride to be able to provide efficient business solutions to my clients/employers.
           </p>
         </div>
-        {/* <LanguageContainer></LanguageContainer> */}
+        <LanguageContainer></LanguageContainer>
       </div>
       <Footer></Footer>
     </div>
   )
+}
+
+About.prototype = {
+  page: PropTypes.string.isRequired,
+  setPage: PropTypes.func.isRequired
 }
 
 export default About

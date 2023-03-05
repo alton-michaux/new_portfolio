@@ -17,6 +17,7 @@
   width: 100%;
   align-content: space-between;
   justify-content: space-between;
+  padding: 2.5%;
 }
 
 .listItems {
@@ -41,6 +42,7 @@
   .navList {
     display: flex;
     list-style: none;
+    padding: 0;
   }
 
   .listItems {

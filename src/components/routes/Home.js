@@ -5,10 +5,13 @@ import Footer from "../Footer";
 import globalStyles from "../../css/App.module.css"
 import styles from "../../css/Home.module.css"
 
-const Home = () => {
+const Home = ({ page, setPage }) => {
+  setPage("Home")
   return (
     <div className={globalStyles.parentDiv}>
-      <Nav></Nav>
+      <Nav
+        page={page}
+      ></Nav>
       <div className={globalStyles.mainPageGreetBox}>
         <div className={styles.greetWrapper}>
           <h1 className={globalStyles.greet}>Hey, I'm Alton and I Develop Web Apps.</h1>
@@ -20,6 +23,11 @@ const Home = () => {
       <Footer></Footer>
     </div>
   )
+}
+
+Home.propTypes = {
+  page: PropTypes.string.isRequired,
+  setPage: PropTypes.func.isRequired
 }
 
 export default Home
