@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 920px) {
   .languageImgContainer {
-    margin-top: 40%;
+    margin-top: 30%;
     flex-direction: row;
   }
 }
