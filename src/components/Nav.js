@@ -38,7 +38,7 @@ const Nav = ({ page }) => {
         {filteredItems.map((item) => {
           return (
             item.key === 5 ?
-              <li key={item.key} className={styles.listItems} download><a href={item.href} >{item.text}</a></li> :
+              <li key={item.key} className={styles.listItems}><a href={item.href} download>{item.text}</a></li> :
               <li key={item.key} className={styles.listItems}><a href={item.href} >{item.text}</a></li>
           )
         })}
