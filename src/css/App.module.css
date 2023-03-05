@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+option:first {
+  color: grey;
+}
+
 body {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -54,16 +64,6 @@ body {
 }
 
 @media screen and (min-width: 920px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  option:first {
-    color: grey;
-  }
-
   .parentDiv {
     display: block;
     position: relative;

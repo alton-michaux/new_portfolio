@@ -17,7 +17,7 @@ const AppGrid = () => {
               <img
                 src="https://idsb.tmgrup.com.tr/ly/uploads/images/2020/10/12/64723.jpg"
                 alt="spotify playlist app"
-                className="thumbnail"
+                className={globalStyles.thumbnail}
               />
               <div className={globalStyles.text}>Spotify Playlist App (JS)</div>
             </div>
@@ -31,7 +31,7 @@ const AppGrid = () => {
               <img
                 src="https://helios-i.mashable.com/imagery/articles/06ce8F6eXTFuryavAjP7fuY/hero-image.fill.size_1200x1200.v1623369766.jpg"
                 alt="Reddit clone"
-                className="thumbnail"
+                className={globalStyles.thumbnail}
               />
               <div className={globalStyles.text}>Reddit Clone App (RoR)</div>
             </div>
@@ -64,7 +64,7 @@ const AppGrid = () => {
               <img
                 src="https://image.api.playstation.com/vulcan/ap/rnd/202009/1415/6nNsvW4EX4wGbcIItg0paDEV.jpg?w=1024"
                 alt="breakout game"
-                className="thumbnail mx-auto"
+                className={globalStyles.thumbnail}
               />
               <div className={[globalStyles.text, navStyles.listItems].join(' ')}>Breakout Game (JS)</div>
             </div>
