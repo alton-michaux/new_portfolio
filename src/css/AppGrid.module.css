@@ -7,6 +7,7 @@
 .projectDisplay {
   grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
   height: 100%;
+  display: none;
 }
 
 .projectLink {
@@ -15,7 +16,7 @@
   height: 29vh;
 }
 
-.projectBlocks {
+.appBlock {
   position: relative;
   height: 100%;
   display: flex;
@@ -53,8 +54,8 @@
     margin: 0 10px;
   }
 
-  .projectBlockOne,
-  .projectBlocks {
+  .gameBlock,
+  .appBlock {
     position: absolute;
     height: 6em;
     width: 100%;
@@ -63,8 +64,8 @@
     box-shadow: rgb(13, 48, 122) -1px 2px 13px;
   }
   
-  .projectBlocks:hover,
-  .projectBlockOne:hover {
+  .appBlock:hover,
+  .gameBlock:hover {
     transform: scale(1.03);
   }
 }

@@ -7,17 +7,17 @@
 .projectPulldown {
   position: absolute;
   top: 0; bottom: 0; left: auto; right: auto;
-  width: 100%;
   font-size: 1em;
   opacity: 80%;
   background-color: #31313f;
   color: white;
 }
 
+.projectPulldown > option {
+  max-width: 80%;
+}
+
 @media screen and (min-width: 920px) {
-  .project-pulldown {
-    cursor: pointer;
-  }
 
   .selectBox {
     position: relative;
@@ -29,6 +29,7 @@
   }
 
   .projectPulldown {
+    cursor: pointer;
     position: absolute;
     top: 0;
     height: 30%;

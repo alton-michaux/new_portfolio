@@ -6,7 +6,7 @@ import styles from "../../css/Contact.module.css"
 
 const Contact = () => {
   return (
-    <>
+    <div className={globalStyles.parentDiv}>
       <Nav></Nav>
       <div className={globalStyles.mainPageGreetBox}>
         <h1 className={globalStyles.greet}>Let's Connect.</h1>
@@ -19,7 +19,7 @@ const Contact = () => {
         </div>
       </div>
       <Footer></Footer>
-    </>
+    </div>
   )
 }
 

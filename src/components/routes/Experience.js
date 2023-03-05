@@ -6,7 +6,7 @@ import styles from "../../css/Experience.module.css"
 
 const Experience = () => {
   return (
-    <>
+    <div className={globalStyles.parentDiv}>
       <Nav></Nav>
       <div class={globalStyles.mainPage}>
         <div class={globalStyles.mainPageGreetBox}>
@@ -26,7 +26,7 @@ const Experience = () => {
         </div>
       </div>
       <Footer></Footer>
-    </>
+    </div>
   )
 }
 

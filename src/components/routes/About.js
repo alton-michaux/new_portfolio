@@ -8,7 +8,7 @@ import LanguageContainer from "../LanguageContainer";
 
 const About = () => {
   return (
-    <>
+    <div className={globalStyles.parentDiv}>
       <Nav></Nav>
       <div className={styles.aboutMeGreetBox}>
         <div className={styles.aboutMeTextBox}>
@@ -21,7 +21,7 @@ const About = () => {
         {/* <LanguageContainer></LanguageContainer> */}
       </div>
       <Footer></Footer>
-    </>
+    </div>
   )
 }
 
