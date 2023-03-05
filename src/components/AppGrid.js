@@ -48,7 +48,7 @@ const AppGrid = () => {
                 alt="chorbee web app"
                 className={globalStyles.thumbnail}
               />
-              <div className={[globalStyles.text, navStyles.listItems]}>Chorebee Web App (RoR)</div>
+              <div className={[globalStyles.text, navStyles.listItems].join(' ')}>Chorebee Web App (RoR)</div>
             </div></a
           >
         </div>
@@ -66,7 +66,7 @@ const AppGrid = () => {
                 alt="breakout game"
                 className="thumbnail mx-auto"
               />
-              <div className={[globalStyles.text, navStyles.listItems]}>Breakout Game (JS)</div>
+              <div className={[globalStyles.text, navStyles.listItems].join(' ')}>Breakout Game (JS)</div>
             </div></a
           >
         </div>
