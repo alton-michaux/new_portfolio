@@ -46,6 +46,7 @@ body {
   left: 0;
   height: 50%;
   width: 50%;
+  padding: 2%;
 }
 
 .text {
@@ -90,6 +91,10 @@ body {
     color: white;
     top: 25%;
     height: 6%;
+  }
+
+  .thumbnail {
+    padding: 0;
   }
 
   .mobileHide {

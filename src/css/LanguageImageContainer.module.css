@@ -1,6 +1,7 @@
 .languageImgContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 15%;
   bottom: 0;
   justify-content: space-between;
@@ -11,13 +12,14 @@
 
 @media screen and (min-width: 920px) {
   .languageImgContainer {
-    margin-top: 30%;
-    flex-direction: row;
+    margin-top: 40%;
+    flex-wrap: nowrap;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .languageImgContainer {
+    margin-top: 30%;
     bottom: 20%;
   }
 }
