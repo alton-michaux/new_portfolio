@@ -3,7 +3,7 @@ import navStyles from "../css/Nav.module.css"
 import styles from "../css/AppGrid.module.css"
 import PropTypes from "prop-types"
 
-const AppGrid = ({gameRef, appRef}) => {
+const AppGrid = ({ gameRef, appRef }) => {
   const jsListItems =
     [
       {
@@ -44,6 +44,17 @@ const AppGrid = ({gameRef, appRef}) => {
       }
     ]
 
+  const tempItem =
+    [
+      {
+        href: "",
+        imgSrc: "https://www.pngfind.com/pngs/m/7-79122_under-construction-png-under-construction-clip-art-transparent.png",
+        imgAlt: "coming soon",
+        text: "Content coming soon!",
+        key: 1
+      }
+    ]
+
   return (
     <div className={styles.canvasGrid}>
       <div className={styles.canvasDiv}>
@@ -71,7 +82,7 @@ const AppGrid = ({gameRef, appRef}) => {
       </div>
       <div className={styles.canvasDiv}>
         <div className={styles.projectDisplay} id="rubyDiv" ref={gameRef}>
-          {rubyListItems.map((item) => {
+          {tempItem.map((item) => {
             return (
               <a
                 className={styles.projectLink}
