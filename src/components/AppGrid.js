@@ -63,9 +63,9 @@ const AppGrid = ({ gameRef, appRef }) => {
             return (
               <a
                 className={styles.projectLink}
-
                 href={item.href}
                 target="blank"
+                key={item.key}
               >
                 <div className={styles.appBlock} id="apps">
                   <img
@@ -88,6 +88,7 @@ const AppGrid = ({ gameRef, appRef }) => {
                 className={styles.projectLink}
                 href={item.href}
                 target="blank"
+                key={item.key}
               >
                 <div className={[styles.gameBlock, styles.appBlock].join(' ')} id="games">
                   <img
