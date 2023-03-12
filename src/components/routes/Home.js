@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import PropTypes from "prop-types";
 import Dropdown from "../Dropdown";
 import Nav from "../Nav"
@@ -6,7 +7,10 @@ import globalStyles from "../../css/App.module.css"
 import styles from "../../css/Home.module.css"
 
 const Home = ({ page, setPage }) => {
-  setPage("Home")
+  useEffect(() => {
+    setPage("Home")
+  }, [page])
+
   return (
     <div className={globalStyles.parentDiv}>
       <Nav

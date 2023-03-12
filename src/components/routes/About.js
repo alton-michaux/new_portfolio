@@ -3,11 +3,15 @@ import NavBar from "../Nav";
 import Footer from "../Footer";
 import PropTypes from "prop-types";
 import globalStyles from "../../css/App.module.css"
+import { useEffect } from "react";
 import styles from "../../css/About.module.css"
 import LanguageContainer from "../LanguageContainer";
 
 const About = ({ page, setPage }) => {
-  setPage("About")
+  useEffect(() => {
+    setPage("About")
+  }, [page])
+
   return (
     <div className={globalStyles.parentDiv}>
       <NavBar
