@@ -32,6 +32,20 @@ test('about page', () => {
   expect(screen.getByText(/ORM and RESTful APIs/i)).toBeInTheDocument()
 })
 
+test('experience page', () => {
+  const experienceRoute = '/experience'
+
+  // use <MemoryRouter> when you want to manually control the history
+  render(
+    <MemoryRouter initialEntries={[experienceRoute]}>
+      <App />
+    </MemoryRouter>,
+  )
+
+  // verify navigation to "no match" route
+  expect(screen.getByText(/Code The Dream Labs/i)).toBeInTheDocument()
+})
+
 test('landing on a bad page', () => {
   const badRoute = '/some/bad/route'
 
