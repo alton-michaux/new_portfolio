@@ -1,36 +1,33 @@
-// import dependencies
+// app.test.js
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import React from 'react'
-// import react-testing methods
-import { render, MemoryRouter, fireEvent, waitFor, screen } from '@testing-library/react'
-// add custom jest matchers from jest-dom
 import '@testing-library/jest-dom'
-import { rest } from 'msw'
-import { setupServer } from 'msw/node'
+import App from '../App'
+import { BrowserRouter, MemoryRouter } from 'react-router-dom'
 
-// the component to test
-import { Home } from "../components/routes/Home"
-import { About } from "../components/routes/About"
-import { Contact } from "../components/routes/Contact"
-import { Experience } from "../components/routes/Experience"
-import { PageUnknown } from "../components/routes/PageUnknown"
+test('full app rendering/navigating', async () => {
+  render(<App />, { wrapper: BrowserRouter })
+  const user = userEvent.setup()
 
+  // verify page content for default route
+  expect(screen.getByText(/Hey, I'm Alton and I Develop Web Apps./i)).toBeInTheDocument()
 
-jest.mock("../components/routes/Home")
-jest.mock("../components/routes/About")
-jest.mock("../components/routes/Contact")
-jest.mock("../components/routes/Experience")
-jest.mock("../components/routes/PageUnknown")
+  // verify page content for expected route after navigating
+  await user.click(screen.getByText(/about/i))
+  expect(screen.getByText(/As a back end developer/i)).toBeInTheDocument()
+})
 
-import { App } from '../App'
+test('landing on a bad page', () => {
+  const badRoute = '/some/bad/route'
 
-test("Should render page header and HomePage on default route", () => {
-    // Arrange
-    Home.mockImplementation(() => <div>HomePageMock</div>);
+  // use <MemoryRouter> when you want to manually control the history
+  render(
+    <MemoryRouter initialEntries={[badRoute]}>
+      <App />
+    </MemoryRouter>,
+  )
 
-    // Act
-    render(
-      <MemoryRouter>
-        <App/>
-      </MemoryRouter>
-    );
+  // verify navigation to "no match" route
+  expect(screen.getByText(/No Page Found/i)).toBeInTheDocument()
 })
