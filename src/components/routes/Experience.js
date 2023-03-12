@@ -33,14 +33,14 @@ const Experience = ({ page, setPage }) => {
       <Nav
         page={page}
       ></Nav>
-      <div class={globalStyles.mainPage}>
-        <div class={globalStyles.mainPageGreetBox}>
-          <h1 class={globalStyles.greet}>
+      <div className={globalStyles.mainPage}>
+        <div className={globalStyles.mainPageGreetBox}>
+          <h1 className={globalStyles.greet}>
             Professional Experience
           </h1>
-          <p class={globalStyles.greet}>Code The Dream Labs (<i>October 2021 - present</i>)</p>
-          <p class={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://labs.codethedream.org/portfolios/alton-michaux" target="blank">Backend Developer</a> on the <a href="https://sites.google.com/view/vamosprojectwiki/home" target="none">Vamos app</a></p>
-          <ul class={[styles.taskList, globalStyles.greet].join(' ')}> A short list of my duties and contributions to Vamos include:
+          <p className={globalStyles.greet}>Code The Dream Labs (<i>October 2021 - present</i>)</p>
+          <p className={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://labs.codethedream.org/portfolios/alton-michaux" target="blank">Backend Developer</a> on the <a href="https://sites.google.com/view/vamosprojectwiki/home" target="none">Vamos app</a></p>
+          <ul className={[styles.taskList, globalStyles.greet].join(' ')}> A short list of my duties and contributions to Vamos include:
             {listItems.map((item) => {
               return (
                 <li key={item.key} className={styles.taskItem}>{item.text}</li>
