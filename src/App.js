@@ -4,6 +4,7 @@ import Home from "./components/routes/Home"
 import About from "./components/routes/About"
 import Contact from "./components/routes/Contact"
 import Experience from "./components/routes/Experience"
+import PageUnknown from "./components/routes/PageUnknown"
 
 function App() {
   const [currentPage, setCurrentPage] = useState('')
@@ -58,6 +59,15 @@ function App() {
           }
         >
         </Route>
+        <Route
+          path="*"
+          element={
+            <PageUnknown
+              page={currentPage}
+              setPage={handlePage}
+            ></PageUnknown>
+          }
+        ></Route>
       </Routes>
     </BrowserRouter>
   );
