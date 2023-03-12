@@ -30,6 +30,9 @@ const Experience = ({ page, setPage }) => {
       }, {
         text: "Actively contribute to QA process",
         key: 6
+      }, {
+        text: "Perform code reviews",
+        key: 7
       }
     ]
   return (

@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 * {
@@ -63,6 +63,10 @@ option:first {
 }
 
 @media screen and (min-width: 920px) {
+  body {
+    overflow: hidden;
+  }
+
   .parentDiv {
     display: block;
     position: relative;
