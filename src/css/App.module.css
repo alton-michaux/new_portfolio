@@ -12,6 +12,10 @@ option:first {
   color: grey;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .parentDiv {
   overflow-y: scroll;
   display: flex;
@@ -30,7 +34,7 @@ option:first {
 }
 
 .greet {
-  text-justify: center;
+  text-align: center;
   top: 35%;
   font-size: 1em;
   margin: 5px;
