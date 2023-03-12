@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./components/routes/Home"
 import About from "./components/routes/About"
 import Contact from "./components/routes/Contact"
@@ -12,8 +12,9 @@ function App() {
   const handlePage = (string) => {
     setCurrentPage(string)
   }
+
   return (
-    <BrowserRouter>
+    <div>
       <Routes>
         <Route
           exact
@@ -69,7 +70,7 @@ function App() {
           }
         ></Route>
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 }
 

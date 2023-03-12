@@ -1,18 +1,22 @@
 import React from "react";
-import Nav from "../Nav";
+import NavBar from "../Nav";
 import Footer from "../Footer";
 import PropTypes from "prop-types";
 import globalStyles from "../../css/App.module.css"
+import { useEffect } from "react";
 import styles from "../../css/About.module.css"
 import LanguageContainer from "../LanguageContainer";
 
 const About = ({ page, setPage }) => {
-  setPage("About")
+  useEffect(() => {
+    setPage("About")
+  }, [setPage, page])
+
   return (
     <div className={globalStyles.parentDiv}>
-      <Nav
+      <NavBar
         page={page}
-      ></Nav>
+      ></NavBar>
       <div className={styles.aboutMeGreetBox}>
         <div className={styles.aboutMeTextBox}>
           <p className={globalStyles.greet}>As a back end developer, I'm knowledgable in Object Oriented Programing: specifically Ruby on Rails techonologies.

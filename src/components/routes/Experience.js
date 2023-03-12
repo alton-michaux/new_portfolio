@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import PropTypes from "prop-types";
 import Nav from "../Nav";
 import Footer from "../Footer";
@@ -5,7 +6,10 @@ import globalStyles from "../../css/App.module.css"
 import styles from "../../css/Experience.module.css"
 
 const Experience = ({ page, setPage }) => {
-  setPage("Experience")
+  useEffect(() => {
+    setPage("Experience")
+  }, [setPage, page])
+
   const listItems =
     [
       {
@@ -19,13 +23,16 @@ const Experience = ({ page, setPage }) => {
         key: 3
       }, {
         text: "Write documentation",
-        key: 3
+        key: 4
       }, {
         text: "Work with the team to implement/debug features",
-        key: 3
+        key: 5
       }, {
         text: "Actively contribute to QA process",
-        key: 3
+        key: 6
+      }, {
+        text: "Perform code reviews",
+        key: 7
       }
     ]
   return (
@@ -33,14 +40,14 @@ const Experience = ({ page, setPage }) => {
       <Nav
         page={page}
       ></Nav>
-      <div class={globalStyles.mainPage}>
-        <div class={globalStyles.mainPageGreetBox}>
-          <h1 class={globalStyles.greet}>
+      <div className={globalStyles.mainPage}>
+        <div className={globalStyles.mainPageGreetBox}>
+          <h1 className={globalStyles.greet}>
             Professional Experience
           </h1>
-          <p class={globalStyles.greet}>Code The Dream Labs (<i>October 2021 - present</i>)</p>
-          <p class={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://labs.codethedream.org/portfolios/alton-michaux" target="blank">Backend Developer</a> on the <a href="https://sites.google.com/view/vamosprojectwiki/home" target="none">Vamos app</a></p>
-          <ul class={[styles.taskList, globalStyles.greet].join(' ')}> A short list of my duties and contributions to Vamos include:
+          <p className={globalStyles.greet}>Code The Dream Labs (<i>October 2021 - present</i>)</p>
+          <p className={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://labs.codethedream.org/portfolios/alton-michaux" target="blank">Backend Developer</a> on the <a href="https://sites.google.com/view/vamosprojectwiki/home" target="none">Vamos app</a></p>
+          <ul className={[styles.taskList, globalStyles.greet].join(' ')}> A short list of my duties and contributions to Vamos include:
             {listItems.map((item) => {
               return (
                 <li key={item.key} className={styles.taskItem}>{item.text}</li>

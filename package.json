@@ -5,7 +5,6 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
@@ -16,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --passWithNoTests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,6 +37,15 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/user-event": "^14.4.3",
+    "msw": "^1.1.0",
     "prop-types": "^15.8.1"
+  },
+  "jest": {
+    "verbose": true,
+    "moduleNameMapper": {
+      "^.+\\.(css|less)$": "identity-obj-proxy"
+    },
+    "testEnvironment": "jsdom"
   }
 }

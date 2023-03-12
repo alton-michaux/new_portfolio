@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import PropTypes from "prop-types";
 import Nav from "../Nav";
 import Footer from "../Footer";
@@ -5,7 +6,10 @@ import globalStyles from "../../css/App.module.css";
 import styles from "../../css/Contact.module.css";
 
 const Contact = ({ page, setPage }) => {
-  setPage("Contact")
+  useEffect(() => {
+    setPage("Contact")
+  }, [setPage, page])
+
   const listItems =
     [
       {

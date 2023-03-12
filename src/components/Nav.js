@@ -1,7 +1,8 @@
+import Nav from 'react-bootstrap/Nav';
 import PropTypes from "prop-types";
 import styles from "../css/Nav.module.css";
 
-const Nav = ({ page }) => {
+const NavBar = ({ page }) => {
   const listItems =
     [
       {
@@ -51,4 +52,4 @@ Nav.propTypes = {
   page: PropTypes.string.isRequired
 }
 
-export default Nav
+export default NavBar
