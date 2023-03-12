@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import PropTypes from "prop-types";
-import Dropdown from "../Dropdown";
 import Nav from "../Nav"
 import Footer from "../Footer";
 import globalStyles from "../../css/App.module.css"
 import styles from "../../css/Home.module.css"
+import Dropdown from "../Dropdown";
+import BootstrapComponent from "../BootstrapExperimentalComp";
 
 const Home = ({ page, setPage }) => {
   useEffect(() => {
@@ -24,6 +25,7 @@ const Home = ({ page, setPage }) => {
         </div>
       </div>
       <Dropdown></Dropdown>
+      <BootstrapComponent></BootstrapComponent>
       <Footer></Footer>
     </div>
   )
