@@ -21,7 +21,7 @@ const Home = ({ page, setPage }) => {
         <div className={styles.greetWrapper}>
           <h1 className={globalStyles.greet}>Hey, I'm Alton and I Develop Web Apps.</h1>
           <h2 className={[globalStyles.greet, globalStyles.mobileHide].join(' ')}>Let's Build Something.</h2>
-          <p className={[globalStyles.greet, globalStyles.desktopHide].join(' ')}>Feel free to browse my personal work below.</p>
+          <p className={[globalStyles.greet, globalStyles.mobileHide].join(' ')}>Feel free to browse my personal work below.</p>
         </div>
       </div>
       <Dropdown></Dropdown>
