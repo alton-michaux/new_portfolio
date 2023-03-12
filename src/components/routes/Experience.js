@@ -23,13 +23,13 @@ const Experience = ({ page, setPage }) => {
         key: 3
       }, {
         text: "Write documentation",
-        key: 3
+        key: 4
       }, {
         text: "Work with the team to implement/debug features",
-        key: 3
+        key: 5
       }, {
         text: "Actively contribute to QA process",
-        key: 3
+        key: 6
       }
     ]
   return (
