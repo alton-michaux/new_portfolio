@@ -10,7 +10,7 @@ import LanguageContainer from "../LanguageContainer";
 const About = ({ page, setPage }) => {
   useEffect(() => {
     setPage("About")
-  }, [page])
+  }, [setPage, page])
 
   return (
     <div className={globalStyles.parentDiv}>

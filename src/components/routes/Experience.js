@@ -8,7 +8,7 @@ import styles from "../../css/Experience.module.css"
 const Experience = ({ page, setPage }) => {
   useEffect(() => {
     setPage("Experience")
-  }, [page])
+  }, [setPage, page])
 
   const listItems =
     [

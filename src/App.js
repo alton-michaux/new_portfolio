@@ -12,6 +12,7 @@ function App() {
   const handlePage = (string) => {
     setCurrentPage(string)
   }
+
   return (
     <div>
       <Routes>

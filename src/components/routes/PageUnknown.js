@@ -8,7 +8,7 @@ import styles from "../../css/Home.module.css"
 const PageUnknown = ({ page, setPage }) => {
   useEffect(() => {
     setPage("PageUnknown")
-  }, [page])
+  }, [setPage, page])
 
   return (
     <div className={globalStyles.parentDiv}>

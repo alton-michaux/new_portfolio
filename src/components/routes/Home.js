@@ -9,7 +9,7 @@ import styles from "../../css/Home.module.css"
 const Home = ({ page, setPage }) => {
   useEffect(() => {
     setPage("Home")
-  }, [page])
+  }, [setPage, page])
 
   return (
     <div className={globalStyles.parentDiv}>

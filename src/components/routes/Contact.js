@@ -8,7 +8,7 @@ import styles from "../../css/Contact.module.css";
 const Contact = ({ page, setPage }) => {
   useEffect(() => {
     setPage("Contact")
-  }, [page])
+  }, [setPage, page])
 
   const listItems =
     [
