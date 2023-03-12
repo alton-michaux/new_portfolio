@@ -25,7 +25,7 @@ const Home = ({ page, setPage }) => {
         </div>
       </div>
       <Dropdown></Dropdown>
-      <BootstrapComponent></BootstrapComponent>
+      {/* <BootstrapComponent></BootstrapComponent> */}
       <Footer></Footer>
     </div>
   )
