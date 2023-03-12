@@ -1,3 +1,7 @@
+.taskList {
+  text-align: center;
+}
+
 @media screen and (min-width: 920px) {
   .taskList {
     list-style: none;

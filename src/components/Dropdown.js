@@ -22,8 +22,8 @@ const Dropdown = () => {
   return (
     <>
       <div className={[styles.selectBox]}>
-        <select className={[styles.projectPulldown]} id="projects" onChange={selected => handleSelect(selected)}>
-          <option value="" className={styles.projects} disabled defaultValue>JavaScript or Ruby?</option>
+        <select className={[styles.projectPulldown]} id="projects" defaultValue={"undefined"} onChange={selected => handleSelect(selected)}>
+          <option value={"undefined"} className={styles.projects} disabled>JavaScript or Ruby?</option>
           <option value="JavaScript" className={styles.projects}>JavaScript</option>
           <option value="Ruby" className={styles.projects}>Ruby</option>
         </select>

@@ -12,6 +12,7 @@
   font-size: 1em;
   opacity: 80%;
   background-color: #31313f;
+  text-align: center;
   color: white;
   height: 25%;
   padding: 15%;
@@ -26,7 +27,7 @@
     position: relative;
     display: flex;
     margin-top: 20em;
-    width: 100%;
+    max-width: 40%;
     height: 20%;
     justify-content: center;
   }
