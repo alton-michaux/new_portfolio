@@ -1,5 +1,5 @@
 body {
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 * {
@@ -13,6 +13,7 @@ option:first {
 }
 
 .parentDiv {
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
