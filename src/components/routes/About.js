@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../Nav";
+import NavBar from "../Nav";
 import Footer from "../Footer";
 import PropTypes from "prop-types";
 import globalStyles from "../../css/App.module.css"
@@ -10,9 +10,9 @@ const About = ({ page, setPage }) => {
   setPage("About")
   return (
     <div className={globalStyles.parentDiv}>
-      <Nav
+      <NavBar
         page={page}
-      ></Nav>
+      ></NavBar>
       <div className={styles.aboutMeGreetBox}>
         <div className={styles.aboutMeTextBox}>
           <p className={globalStyles.greet}>As a back end developer, I'm knowledgable in Object Oriented Programing: specifically Ruby on Rails techonologies.
