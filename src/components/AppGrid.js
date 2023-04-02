@@ -7,7 +7,7 @@ const AppGrid = ({ gameRef, appRef }) => {
   const jsListItems =
     [
       {
-        href: "https://gvomusicdiscovery.netlify.app/",
+        href: "https://playlistified.netlify.app/",
         imgSrc: "https://idsb.tmgrup.com.tr/ly/uploads/images/2020/10/12/64723.jpg",
         imgAlt: "spotify playlist app",
         text: "Spotify Playlist App",
