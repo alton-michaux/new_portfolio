@@ -1,5 +1,5 @@
-import globalStyles from "../css/App.module.css";
-import styles from "../css/LanguageImageContainer.module.css";
+import globalStyles from "./../css/App.module.css";
+import styles from "./../css/LanguageImageContainer.module.css";
 import rails from './../assets/Images/Ruby-on-rails-development.png'
 import html from './../assets/Images/html-5.png'
 import css from './../assets/Images/css3.png'

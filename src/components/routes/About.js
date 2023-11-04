@@ -19,10 +19,17 @@ const About = ({ page, setPage }) => {
       ></NavBar>
       <div className={styles.aboutMeGreetBox}>
         <div className={styles.aboutMeTextBox}>
-          <p className={globalStyles.greet}>As a back end developer, I'm knowledgable in Object Oriented Programing: specifically Ruby on Rails techonologies.
-            This has allowed me to gain experience with MVC concepts, ORM and RESTful APIs.
-            I also have experience in front end development with HTML, CSS, and JavaScript.
-            As a self-motivated individual who is always looking to learn new skills and improve my current ones, it gives me a sense of pride to be able to provide efficient business solutions to my clients/employers.
+          <p style={{ padding: "10px"}}>
+            I am an experienced back-end developer with expertise in Object-Oriented Programming (OOP), focusing on Ruby on Rails technologies. 
+          </p>
+          <p style={{ padding: "10px"}}>
+            My knowledge includes MVC concepts, ORM, and RESTful APIs.
+          </p>
+          <p style={{ padding: "10px"}}>
+            Additionally, I have practical experience in front-end development using HTML, CSS, and JavaScript.
+          </p>
+          <p style={{ padding: "10px"}}>
+            As a self-motivated individual constantly eager to expand my skill set and enhance my existing strengths, I take great pride in delivering efficient business solutions to my clients and employers.
           </p>
         </div>
         <LanguageContainer></LanguageContainer>
