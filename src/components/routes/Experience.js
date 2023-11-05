@@ -33,6 +33,15 @@ const Experience = ({ page, setPage }) => {
       }, {
         text: "Perform code reviews",
         key: 7
+      }, {
+        text: "Perform developer evaluations",
+        key: 8
+      }, {
+        text: "Mentor junior developers",
+        key: 9
+      }, {
+        text: "Collaborate with management to meet deadlines",
+        key: 10
       }
     ]
   return (
