@@ -5,6 +5,8 @@
 @media screen and (min-width: 920px) {
   .taskList {
     list-style: none;
+    min-height: 250px;
+    overflow-y: auto;
   }
 
   .taskItem {
